@@ -23,3 +23,11 @@ void ingresos_egresos(int ingresos[insumos][meses], int egresos[insumos][meses])
         }
     }
 }
+void total_anual(int ingresos[insumos][meses], int egresos[insumos][meses]) {
+    for (int i = 0; i < insumos; ++i) {
+        int total_ingresos = 0;
+        int total_egresos = 0;
+        for (int j = 0; j < meses; ++j) {
+            total_ingresos += ingresos[i][j];
+            total_egresos += egresos[i][j];
+        }
